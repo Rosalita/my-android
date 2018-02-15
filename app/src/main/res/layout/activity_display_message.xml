@@ -4,17 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.rosie.rosieapp.DisplayMessageActivity">
+    tools:context="com.example.rosie.rosieapp.DisplayMessageActivity"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="224dp"
         android:text="@string/edit_message"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        app:layout_constraintHorizontal_bias="0.502"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="193dp"
+        android:layout_height="193dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="star.json"
+        app:lottie_loop="true" />
+
 </android.support.constraint.ConstraintLayout>

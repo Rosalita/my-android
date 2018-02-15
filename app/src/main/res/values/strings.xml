@@ -3,4 +3,7 @@
     <string name="main_text">Rosie is an Android Dev!</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="pictures_button">Pictures</string>
+    <string name="take_picture">Tap the image below to take a picture</string>
+    <string name="meme_button">Memefify</string>
 </resources>

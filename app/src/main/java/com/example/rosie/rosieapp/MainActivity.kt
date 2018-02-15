@@ -3,11 +3,12 @@ package com.example.rosie.rosieapp
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+
 import android.view.View
 import android.widget.EditText
 
-const val EXTRA_MESSAGE = "com.example.rosie.MESSAGE"
 
+const val EXTRA_MESSAGE = "com.example.rosie.MESSAGE"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +23,12 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, DisplayMessageActivity::class.java).apply {
             putExtra(EXTRA_MESSAGE, message)
         }
+        startActivity(intent)
+    }
+
+    /** Called when the user taps the Pictures button */
+    fun goToPictures(view: View){
+        val intent = Intent(this, PictureActivity::class.java)
         startActivity(intent)
     }
 }
